@@ -1,0 +1,96 @@
+html, body {
+    height: 100%;
+}
+
+#container{
+	width: 100%;
+    height: 100%;
+    min-height: 100%;
+    border:1px solid #CCC;
+    
+}
+
+#search{
+	margin-left: 33px;
+}
+
+.pagination{
+	margin-left: 40px;
+}
+
+/* container components*/
+#container .left{
+	float: left;	
+	width:172px;
+	height: 100%;
+	border:1px solid #CCC;
+}
+
+#container .middle{	
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	
+	width: 794px;
+	height: 100%;
+	
+	border:1px solid #CCC;	
+}
+
+#container .right{
+	float: right;
+	width:172px;
+	
+	height: 100%;
+	border:1px solid #CCC;
+}
+
+
+/*Album list*/
+
+.container .middle .albums ul .album li a:hover{
+ 	color: blue;
+	
+}
+
+.container .middle .albums ul{
+ 	
+ 	list-style-type: none;
+	
+}
+
+.container .middle .albums .album{
+	height: 200px;
+	width: 700px;
+	border:1px solid #CCC;
+}
+
+.container .middle .albums h1{
+	margin-left: 37px;
+	color: blue;
+}
+
+.container .middle .albums ul li{
+	position: relative;
+	display: inline;
+	
+}	
+
+.container .middle .albums ul li a{
+ 	text-decoration: none;
+ 	color: white;
+ 	list-style-type: none;
+	
+}
+
+.container .middle .albums .album h6{
+	position: relative;
+	color: blue;
+	margin-top: -1px;
+}
+.container .middle .albums .album img{
+	margin-right: 10px;
+	float: left;
+	width: 200px;
+	height: 200px;
+}

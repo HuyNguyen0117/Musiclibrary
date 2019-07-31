@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="MusicLibrary" transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>com.huynguyen.musiclibrary.dao.Album</class>
+		<class>com.huynguyen.musiclibrary.dao.Artist</class>
+		<class>com.huynguyen.musiclibrary.dao.Country</class>
+		<class>com.huynguyen.musiclibrary.dao.Genre</class>
+		<class>com.huynguyen.musiclibrary.dao.Song</class>
+		<class>com.huynguyen.musiclibrary.dao.Type</class>
+		<class>com.huynguyen.musiclibrary.dao.User</class>
+		<class>com.huynguyen.musiclibrary.dao.Userandlike</class>
+	
+		
+		<properties>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"></property>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/musiclibrary"></property>
+            <property name="hibernate.connection.username" value="root"></property>
+            <property name="hibernate.connection.password" value="root"></property>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"></property>
+            <!-- Default is false for backwards compatibility. Should be used on all
+                new projects -->
+            <property name="hibernate.id.new_generator_mappings" value="true"></property>
+        </properties>
+		
+	</persistence-unit>
+</persistence>
